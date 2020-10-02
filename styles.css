@@ -6,6 +6,107 @@
   user-select: none;
 }
 
+a, button { 
+  display: inline-block; 
+  text-decoration: none; 
+  color: inherit; 
+  line-height: 1; 
+-webkit-transition: all .25s ease-in-out; 
+  transition: all .25s ease-in-out; 
+}
+
+/*a:focus, a:active, a:hover,
+button:focus, button:active, button:hover,
+a b.light-color:hover{ 
+  text-decoration: none; 
+  color: #FFA804; 
+}*/
+
+a.animated-button:link, a.animated-button:visited {
+	position: relative;
+	display: block;
+	color: #fff;
+	text-align: center;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+a.animated-button:link:after, a.animated-button:visited:after {
+	content: "";
+	position: absolute;
+	/*height: 0%;
+	left: 50%;
+	top: 50%;
+	width: 150%;*/
+	z-index: -1;
+	-webkit-transition: all 0.75s ease 0s;
+	-moz-transition: all 0.75s ease 0s;
+	-o-transition: all 0.75s ease 0s;
+	transition: all 0.75s ease 0s;
+}
+a.animated-button:link:hover, a.animated-button:visited:hover {
+	color: #FFF;
+	text-shadow: none;
+}
+
+a.animated-button:link, a.animated-button:visited {
+	position: relative;
+	display: block;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	letter-spacing: .08em;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+a.animated-button.thar-two {
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	position: relative;
+	border: 2px solid #FFA804;
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    padding: 5px 30px; 
+    border-radius: 20px; 
+    float: right;
+    margin-top: 0px;
+	box-shadow: inset 0 0px 4px rgba(0,0,0,.3); 
+    
+}
+a.animated-button.thar-two:hover {
+	color: #000 !important;
+	background-color: transparent;
+	text-shadow: ntwo;
+}
+a.animated-button.thar-two:hover:before {
+	top: 0%;
+	bottom: auto;
+	height: 100%;
+}
+a.animated-button.thar-two:before {
+	display: block;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	height: 0px;
+	width: 100%;
+	z-index: -1;
+	content: '';
+	color: #000 !important;
+	background: #FFA804;
+	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+
 body .solar_systm .planet, body input[type=radio][name=planet]::after, body .overlay {
   position: absolute;
   left: 0;
